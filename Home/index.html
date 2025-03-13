@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHICOBENTO</title>
+    <link rel="stylesheet" href="/Home/css.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="cabeçalho">
+            <div class="logo">
+                <a href="/Home/index.html">
+                    <img src="/Home/boneco rural inspirado no Chico Bento da Turma da Mônica, bem roceiro, homem, com chapéu de palha e um celular na mão, estilo desenho animado.png" alt="Logo da Loja" id="logo">
+                </a>
+            </div>
+
+            <div class="search-container">
+                <form action="/pesquisar" method="GET">
+                    <input type="text" placeholder="Buscar produtos..." name="search" id="search">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+
+           <!-- Botão para abrir o menu de categorias -->
+           <div class="menu-btn" onclick="toggleMenu()"> </div>
+        </div>
+
+            <div class="nav">
+                <ul id="navbar">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/sobre-nos.html">Sobre Nós</a></li>
+                    <li><a href="/servicos.html">Produtos</a></li>
+
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+
+     <!-- Botão de Menu Hambúrguer -->
+     <button class="menu-btn" id="menu-btn">
+        <span class="hamburguer"></span>
+    </button>
+
+    <!-- Painel de Navegação -->
+    <div class="nav-panel" id="nav-panel">
+        <ul>
+            <li><a href="/hardware.html">Hardwares</a></li>
+            <li><a href="/monitores.html">Monitores</a></li>
+            <li><a href="#perifericos">Periféricos</a></li>
+            <li><a href="#consoles">Consoles</a></li>
+        </ul>
+    </div>
+
+    <script src="/Home/javascript.js"></script>
+   
+
+    <section class="home">
+        <h1>Bem-vindo à nossa loja de produtos variados!</h1>
+        <p>Oferecemos uma grande variedade de produtos com qualidade e preços acessíveis.</p>
+        
+        <div class="produtos-destaque">
+            <h2>Produtos em Destaque</h2>
+            <div class="produto">
+                <img src="/Home/fone.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Preço: R$ 50,00</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="/Home/relogio.jpeg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>Preço: R$ 80,00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
