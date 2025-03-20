@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/ADMIN/dash.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul id="navbar">
+                <li><a href="/Home/index.html">Home</a></li>
+                <li><a href="/sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="/servicos.html">Produtos</a></li>
+                <li><a href="">Adicionar ofertas</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- FORMULÁRIO DE ADIÇÃO DE PRODUTOS -->
+    <section class="add-product">
+        <div class="form-container">
+            <!-- Imagem do Produto -->
+            <div class="image-upload">
+                <label for="imageUpload" class="upload-btn">Escolher Imagem</label>
+                <input type="file" id="imageUpload" multiple />
+                <div class="image-preview">
+                    <button id="prevImage" class="nav-btn">&lt;</button>
+                    <img id="previewImage" src="#" alt="Imagem do Produto" />
+                    <button id="nextImage" class="nav-btn">&gt;</button>
+                </div>
+            </div>
+
+            <!-- Descrição -->
+            <div class="product-info">
+                <textarea id="description" placeholder="Descrição"></textarea>
+                <input type="number" id="price" placeholder="Valor" />
+                <input type="number" id="stock" placeholder="Quantidade em estoque" />
+                <select id="category">
+                    <option value="fone">Fone</option>
+                    <option value="relogio">Relógio</option>
+                    <option value="garrafa">Garrafa</option>
+                </select>
+                <button id="addProduct">Adicionar Produto</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- LISTAGEM DE PRODUTOS -->
+    <section class="product-list">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Pesquisar produto..." />
+            <button id="searchButton" class="search-btn">Pesquisar</button>
+        </div>
+
+        <div class="filters">
+            <select id="filterTag" class="filter-select">
+                <option value="">Filtrar por Categoria</option>
+                <option value="fone">Fone</option>
+                <option value="relogio">Relógio</option>
+                <option value="garrafa">Garrafa</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+            <!-- Os produtos serão carregados dinamicamente aqui -->
+        </div>
+    </section>
+
+    <script src="dash.js"></script>
+</body>
+</html>
+

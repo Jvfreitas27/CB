@@ -2,8 +2,9 @@
 header {
     background-color: #000000c0;
     color: #fff;
-    padding: 8px 0;
-    position: relative; /* Necessário para posicionar o texto em meia lua */
+    padding: 15px 0;
+    
+   
 }
 
 
@@ -12,7 +13,8 @@ header .cabeçalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0px 20px;
+    
 }
 
 /* Texto com fundo e letras coloridas */
@@ -104,7 +106,8 @@ header .nav ul li a:hover {
 .search-container {
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
+    
 }
 
 .search-container form {
@@ -118,6 +121,7 @@ header .nav ul li a:hover {
     border-radius: 30px;
     border: none;
     width: 400px;  
+
 }
 
 .search-container button {
@@ -457,3 +461,57 @@ ul {
     font-size: 12px;
     margin-top: 10px;
 }  
+
+
+/* botao de login */
+
+.boton-elegante {
+    padding: 10px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: #2e8b57;  /* Verde padrão */
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    outline: none;
+    position: absolute;
+    left: 85%;
+    top: 20px;
+}
+
+.boton-elegante:hover {
+    background-color: #2e8b5686;  /* Verde mais escuro ao passar o mouse */
+    border-color: #666666;
+    color: #ffffff;
+}
+
+
+/* Estilo do carrinho */
+
+/* Estilo do .button */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 15px;
+    background-color: #2e8b57;  /* Verde padrão */
+    border: 2px solid #2c2c2c;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    position: absolute;
+    left: 76%;
+    top: 20px;
+}
+
+.button:hover {
+    background-color: #2e8b5686;  /* Verde mais escuro ao passar o mouse */
+    border-color: #666666;
+    color: #ffffff;
+}
